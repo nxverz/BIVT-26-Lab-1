@@ -7,7 +7,9 @@
             bool answer = false;
 
             // code here
-
+            double a = Math.Abs(d); // модуль числа
+            answer = true;
+            Console.WriteLine($"modul = {a} and answer = {answer}");
             // end
 
             return answer;
