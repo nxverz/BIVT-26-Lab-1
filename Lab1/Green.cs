@@ -4,111 +4,110 @@
     {
         public bool Task1(double d)
         {
-            bool answer1 = false;
+            bool answer = false;
 
             // code here
-            answer1 = Math.Abs(d) >= 1;
+            answer = Math.Abs(d) >= 1;
             // end
 
-            return answer1;
+            return answer;
         }
         public bool Task2(double d, double f)
         {
-            bool answer2 = false;
+            bool answer = false;
 
             // code here
-            answer2 = (d + f) / 2 > 0;
+            answer = (d + f) / 2 > 0;
             // end
 
-            return answer2;
+            return answer;
         }
         public bool Task3(int a, int b)
         {
-            bool answer3 = false;
+            bool answer = false;
             // code here
-            answer3 = (a + b) > (Math.Abs(a) + Math.Abs(b)) / 2;
+            answer = (a + b) > (Math.Abs(a) + Math.Abs(b)) / 2;
             // end
 
-            return answer3;
+            return answer;
         }
         public int Task4(int a, int b, int c)
         {
-            int answer4 = 0;
+            int answer = 0;
 
             // code here
-            if (b > answer4) answer4 = b;
-            if (c > answer4) answer4 = c;
+            if (b > answer) answer = b;
+            if (c > answer) answer = c;
 
             // end
 
-            return answer4;
+            return answer;
         }
         public double Task5(double x)
         {
-            double answer5 = 0;
+            double answer = 0;
 
             // code here
             if (Math.Abs(x) > 1)
             {
-                answer5 = 0;
+                answer = 0;
             }
             else
             {
-                answer5 = x * x - 1;
+                answer = x * x - 1;
             }
 
             // end
 
-            return answer5;
+            return answer;
         }
         public bool Task6(double x, double y)
         {
-            bool answer6 = false;
+            bool answer = false;
 
             // code here
             if (y >= 0 && y <= 1 - Math.Abs(x))
             
-                answer6 = true;
+                answer = true;
             
 
             // end
 
-            return answer6;
+            return answer;
         }
 
         public bool Task7(int n)
         {
-            bool answer7 = true;
+            bool answer = true;
 
             // code here
             if (n < 0)
             {
-                answer7 = false;
+                answer = false;
             }
             else if (n % 2 == 0)
             {
-                answer7 = false;
+                answer = false;
             }
 
             // end
 
-            return answer7;
+            return answer;
         }
         public bool Task8(int X, int Y)
         {
-            bool answer8 = false;
+            bool answer = false;
 
             // code here
             int chay = X / 2; 
             int shift = (X * Y) + (Y * chay); 
             if (shift >= 420)
 
-                answer8 = true; 
+                answer = true; 
 
             // end
 
-            return answer8;
+            return answer;
         }
     }
-}
 }
